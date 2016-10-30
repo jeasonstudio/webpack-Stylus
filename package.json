@@ -1,10 +1,11 @@
 {
-  "name": "stylus-loder",
+  "name": "tostylus",
   "version": "0.1.0",
   "description": "stylus",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "start"
+    "dev": "webpack",
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/jeasonstudio/webpack-Stylus#readme",
   "devDependencies": {
+    "css-loader": "^0.25.0",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }
