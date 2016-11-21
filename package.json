@@ -4,7 +4,7 @@
   "description": "stylus",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack",
+    "start": "webpack-dev-server --inline",
     "test": ""
   },
   "repository": {
