@@ -1,6 +1,15 @@
-// var aa = require('./src/js/function');
-require('../stylus/style.styl');
 
-var aa = require('functions');
+
+var options = {
+    a: '../stylus/style.styl'
+}
+
+require(s[options]);
+
+// var aa = require('./src/js/functions.js');
+
+// alert("fuck")
 
 document.write("asdaaaaaaa")
+
+// alert(aa)
