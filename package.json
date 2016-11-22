@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/jeasonstudio/webpack-Stylus#readme",
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
     "css-loader": "^0.25.0",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",

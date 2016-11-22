@@ -1,14 +1,6 @@
+require('../stylus/style.styl');
 
-
-var options = {
-    a: '../stylus/style.styl'
-}
-
-require(s[options]);
-
-// var aa = require('./src/js/functions.js');
-
-// alert("fuck")
+alert("fuck")
 
 document.write("asdaaaaaaa")
 

@@ -7,12 +7,10 @@ var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 module.exports = {
 
 	plugins: [commonsPlugin],
-	entry: [
-		'./src/js/main.js'
-	],
+	entry: './src/js/main.js',
 	output: {
 		// path: './dist/js',
-		filename: './dist/js/[name].js' //打包后的名字
+		filename: './dist/js/main.js' //打包后的名字
 	},
 	module: {
 		loaders: [{
@@ -24,6 +22,9 @@ module.exports = {
 		}, {
 			test: /\.jpg$/,
 			loader: "file-loader"
+		},{
+			test: /\.js$/,
+			loader: "babel-loader"
 		}, {
 			test: /\.styl$/,
 			loader: 'style-loader!css-loader!stylus-loader'
