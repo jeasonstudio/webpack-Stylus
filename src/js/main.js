@@ -7,3 +7,7 @@ require('../stylus/main.styl');
 document.write("asdaaaaaassa")
 
 // alert(aa)
+
+let [a, b, c] = [1, 2, 3];
+
+// alert(a)

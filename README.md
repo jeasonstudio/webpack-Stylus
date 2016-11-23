@@ -1,6 +1,6 @@
 # webpack-Stylus
 
-基于 Stylus 和 webpack 的简单高效的前端页面重构项目结构。
+基于 Stylus 、 ES6 和 webpack 的简单高效的前端页面重构项目结构。
 
 ### 目标：
 
@@ -20,6 +20,7 @@
 ├──assert               --- 设计稿及其他项目资源
 ├──html                 --- 项目 HTML 页面
 ├──dist                 --- 项目合并后目录
+├──tpls                 --- 存放 html
 ├──src                  --- 项目开发目录
    ├──css               --- 其他项目需要的其他 CSS 文件，复制到 ./dist/css/xxx.css
    ├──fonts             --- iconFonts 放在这里，复制到 ./dist/fonts/xxx.ttf
@@ -27,8 +28,11 @@
    ├──js                --- JS 组件，压缩到./dist/js/xxx.js。或合并压缩。
      ├──plugins         --- JS 插件存放目录，webpack 会将此目录所有文件合并压缩为 dist/js/plugins.min.js 文件
    ├──stylus            --- stylus 文件目录，合并压缩到 ./dist/css/style.css
-     ├──var.styl        --- 定义常用颜色、尺寸等变量
-     ├──util.styl       --- 定义高复用的模块化 css
+     ├──base            --- 基础 styl
+     ├──components      --- 相关细节 styl
+     ├──layout          --- 项目复用结构相关 styl
+     ├──themes          --- 主题相关 styl
+     ├──pages           --- pages相关
      └──main.styl       --- main.styl 主文件
 ```
 
@@ -50,11 +54,9 @@
 
 ### CSS 开发建议
 
-预先审查设计稿，将其常见颜色、尺寸等保存为变量，统一管理在 `./src/stylus/var.styl` 文件中。
+预先审查设计稿，将其常见颜色、尺寸等保存为变量，统一管理在 `./src/stylus/base/var.styl` 文件中。
 
-查看 `util.styl` 文件，将一些可复用、高效率的 `Stylus` 写入 `util.styl` ，提高开发效率。
-
-在 `custom.styl` 文件编写主要代码，在 `media-queries.styl` 文件编写响应式有关代码，如果不需要则可以在 `style.styl` 文件中注释掉有关 `@import`。
+其他请按照相关目录及说明，在适当的位置写 stylus
 
 ### JS 开发建议
 
