@@ -4,7 +4,7 @@
   "description": "stylus",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --inline",
+    "start": "webpack-dev-server --inline --hot --host 0.0.0.0",
     "buildlinux": "export isProductEnv=true && webpack"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "babel-loader": "^6.2.8",
     "babel-preset-es2015": "^6.18.0",
     "css-loader": "^0.25.0",
+    "jquery": "^3.1.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",

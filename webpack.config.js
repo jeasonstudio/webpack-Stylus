@@ -1,16 +1,24 @@
-var webpack = require('webpack');
-var path = require("path");
+const path = require("path");
 
-// var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+const option = {
+	webpack: require(path.join(__dirname, 'node_modules', 'webpack')),
+}
+
+const commonsPlugin = new option.webpack.ProvidePlugin({
+	$: "jquery",
+	jQuery: "jquery",
+	"window.jQuery": "jquery"
+});
 
 module.exports = {
 
-	// plugins: [commonsPlugin],
+	plugins: [commonsPlugin],
 	entry: './src/js/main.js',
 	output: {
 		path: __dirname,
 		filename: './dist/js/main.js'
 	},
+	devtool: 'eval-source-map',
 	module: {
 		loaders: [{
 			test: /\.css$/,
