@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --inline",
-    "test": ""
+    "buildlinux": "export isProductEnv=true && webpack"
   },
   "repository": {
     "type": "git",
