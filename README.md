@@ -1,6 +1,6 @@
 # webpack-Stylus
 
-基于 Stylus 、 ES6 和 webpack 的简单高效的前端页面重构项目结构。
+采用Stylus、ES6和webpack进行简单高效的前端项目重构结构，可快速结合其他框架开发。
 
 ### 目标：
 
