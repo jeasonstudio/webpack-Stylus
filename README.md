@@ -66,6 +66,10 @@
 
 如果你使用 jQuery，这样在你的 HTML 页面中，引入三个 JS 文件链接即可。
 
+### 项目进度
+
+- v 1.0.0 完成 ES6 + Stylus + Webpack 对项目的构建，完成 stylus 的项目结构构建
+
 ### 使用许可
 
 [MIT](./LICENSE)
