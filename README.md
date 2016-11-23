@@ -29,7 +29,7 @@
    ├──stylus            --- stylus 文件目录，合并压缩到 ./dist/css/style.css
      ├──var.styl        --- 定义常用颜色、尺寸等变量
      ├──util.styl       --- 定义高复用的模块化 css
-     └──style.styl      --- stylus 主文件
+     └──main.styl       --- main.styl 主文件
 ```
 
 ### 使用方法

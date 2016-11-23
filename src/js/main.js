@@ -1,7 +1,9 @@
-require('../stylus/style.styl');
 
-alert("fuck")
+// 引入相关所有 css
+require('../stylus/main.styl');
 
-document.write("asdaaaaaaa")
+// alert("fuck")
+
+document.write("asdaaaaaassa")
 
 // alert(aa)

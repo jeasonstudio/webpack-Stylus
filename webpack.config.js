@@ -1,15 +1,15 @@
 var webpack = require('webpack');
-// var path = require("path");
+var path = require("path");
 // var css = require('!raw!stylus!./file.styl'); // Just the CSS 
-var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+// var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 
 
 module.exports = {
 
-	plugins: [commonsPlugin],
+	// plugins: [commonsPlugin],
 	entry: './src/js/main.js',
 	output: {
-		// path: './dist/js',
+		path: __dirname, 
 		filename: './dist/js/main.js' //打包后的名字
 	},
 	module: {
