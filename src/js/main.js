@@ -15,6 +15,3 @@ const data = [
 console.log(getRandom());
 
 $("#init")[0].innerHTML = data[getRandom()]
-    // document.write(data[getRandom()])
-
-// $("#init").innerHTML = '<span>sss</span>'
