@@ -28,7 +28,7 @@ module.exports = {
 			loader: "url-loader?limit=100000"
 		}, {
 			test: /\.jpg$/,
-			loader: "file-loader"
+			loader: "file-loader!url-loader?limit=100000"
 		}, {
 			test: path.join(__dirname, 'es6'),
 			loader: 'babel-loader',
